@@ -1,17 +1,17 @@
 # vue 面试题汇总
 
-** 1、active-class 是哪个组件的属性？嵌套路由怎么定义 **
+**1、active-class 是哪个组件的属性？嵌套路由怎么定义**
 
 　　(1)、active-class 是 vue-router 模块的 router-link 组件的属性
 　　(2)、使用 children 定义嵌套路由
 
-** 2、怎么定义 vue-router 的动态路由? 怎么获取传过来的值 **
+**2、怎么定义 vue-router 的动态路由? 怎么获取传过来的值**
 
 　　在 router 目录下的 index.js 文件中，对 path 属性加上 /:id。
 
 　　使用 router 对象的 params.id 获取
 
-** 3、vue-router 有哪几种导航钩子? **
+**3、vue-router 有哪几种导航钩子?**
 
 　　三种，
 
@@ -31,19 +31,19 @@
 
 　　　　beforeEnter
 
-** 4、v-model 是什么？怎么使用？ vue中标签怎么绑定事件 **
+**4、v-model 是什么？怎么使用？ vue中标签怎么绑定事件**
 
 　　v-model 可以实现双向绑定，
 
 　　绑定事件：<input @click="doLog" />
 
-** 5、axios 是什么？怎么使用？描述使用它实现登录功能的流程 **
+**5、axios 是什么？怎么使用？描述使用它实现登录功能的流程**
 
 　　axios 是请求后台资源的模块。 npm i axios -S
 
 　　如果发送的是跨域请求，需在配置文件中 config/index.js 进行配置
 
-** 6、vuex 是什么？怎么使用？哪种功能场景使用它 **
+**6、vuex 是什么？怎么使用？哪种功能场景使用它**
 
 　　vuex 是专门为 vue 开发的数据状态管理模式。组件之间数据状态共享
 
@@ -61,7 +61,7 @@
 	import store from './store'
 	...
 
-** 7、mvvm 框架是什么？它和其他框架(jquery) 的区别是什么？哪些场景适合
+**7、mvvm 框架是什么？它和其他框架(jquery) 的区别是什么？哪些场景适合**
 
 　　mvvm 是 model + view + viewmodel 框架，通过 viewmodel 连接数据模型model 和 view
 
@@ -69,7 +69,7 @@
 
 　　场景：数据操作比较多的场景，更加快捷
 
-** 8、自定义指令(v-check, v-focus) 的方法有哪些? 它有哪些钩子函数? 还有哪些钩子函数参数 **
+**8、自定义指令(v-check, v-focus) 的方法有哪些? 它有哪些钩子函数? 还有哪些钩子函数参数**
 
 　　全局定义指令：在 vue 对象的 directive 方法里面有两个参数, 一个是指令名称, 另一个是函数。
 
@@ -79,17 +79,17 @@
 
 　　钩子函数参数： el、binding
 
-** 9、说出至少 4 种 vue 当中的指令和它的用法 **
+**9、说出至少 4 种 vue 当中的指令和它的用法**
 
 　　v-if(判断是否隐藏)、v-for(把数据遍历出来)、v-bind(绑定属性)、v-model(实现双向绑定)
 
-** 10、vue-router 是什么?它有哪些组件 **
+**10、vue-router 是什么?它有哪些组件**
 
 　　vue-router 是 vue 的路由插件,
 
 　　组件：router-link router-view
 
-** 11、vue 的双向绑定的原理是什么 **
+**11、vue 的双向绑定的原理是什么**
 
 　　vue.js 是采用数据劫持结合发布者-订阅者模式的方式，通过Object.defineProperty()来劫持各个属性的setter，getter，在数据变动时发布消息给订阅者，触发相应的监听回调。
 
@@ -110,7 +110,7 @@
 
 　　第四步：MVVM作为数据绑定的入口，整合Observer、Compile和Watcher三者，通过Observer来监听自己的model数据变化，通过Compile来解析编译模板指令，最终利用Watcher搭起Observer和Compile之间的通信桥梁，达到数据变化 -> 视图更新；视图交互变化(input) -> 数据model变更的双向绑定效果。
 
-** 12、请详细说下你对vue生命周期的理解？ **
+**12、请详细说下你对vue生命周期的理解**
 
 　　总共分为8个阶段创建前/后，载入前/后，更新前/后，销毁前/后。
 
